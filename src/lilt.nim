@@ -10,11 +10,16 @@ import lilt/private/parse
 import lilt/private/types
 import lilt/private/interpret
 import lilt/private/hints
+import lilt/private/inner_ast
 
 export base.Parser
 export base.LiltValue
 export base.LiltType
 export base.RuleError
+export inner_ast.`[]`
+export inner_ast.`==`
+export inner_ast.`toJson`
+export inner_ast.`$$`
 
 import logging
 var log = newConsoleLogger(fmtStr="[$datetime] $levelname :: ")
